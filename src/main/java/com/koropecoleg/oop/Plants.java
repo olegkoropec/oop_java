@@ -1,18 +1,17 @@
 package com.koropecoleg.oop;
 
 public class Plants {
-    int  height_of_plant;
-    int width_of_plant;
+    int  heightPlant;
+    int widthPlant;
+
     protected  void blossom(){
         System.out.println("I blossom");
     }
 
-    protected void height() {
-
+    protected void height(double v, double v1) {
     }
 
-    public static void main(String[] args) {
-        Plants plants = new Plants();
-        plants.blossom();
+    protected int height(int i) {
+        return 0;
     }
 }

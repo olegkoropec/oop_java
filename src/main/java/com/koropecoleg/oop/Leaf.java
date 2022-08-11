@@ -9,10 +9,4 @@ public class Leaf extends Oak {
     protected String height(String i) {
         return i +" am leaf";
     }
-
-    public static void main(String[] args) {
-        Leaf leaf = new Leaf();
-        leaf.blossom();
-        leaf.height("I");
-    }
 }
