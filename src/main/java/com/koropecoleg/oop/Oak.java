@@ -10,7 +10,7 @@ public class Oak extends Plants {
     }
 
     protected  void blossom(){
-        System.out.println("I blossom in spring");
+        System.out.println("I will blossom in spring");
     }
 
     protected void height(double height, double width) {

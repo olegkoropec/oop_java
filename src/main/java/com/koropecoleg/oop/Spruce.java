@@ -6,7 +6,6 @@ public class Spruce extends Plants {
     super(heightPlant);
     }
 
-
     protected  void blossom(){
         System.out.println("I don't blossom ");
     }

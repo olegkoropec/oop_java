@@ -5,7 +5,6 @@ public class Plants {
     private int  heightPlant;
 
     Plants(){
-
     }
 
     Plants(int heightPlant){
