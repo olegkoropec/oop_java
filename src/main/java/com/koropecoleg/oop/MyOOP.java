@@ -4,7 +4,7 @@ public class MyOOP {
     public static void main(String[] args) {
         Plants plants = new Plants();
         Plants oak = new Oak(50, 15);
-        Plants spruce = new Spruce();
+        Plants spruce = new Spruce(34);
         Leaf leaf = new Leaf();
         plants.blossom();
         oak.blossom();

@@ -7,6 +7,6 @@ public class Leaf extends Oak {
     }
 
     protected String height(String i) {
-        return i +" am leaf";
+        return i + " am leaf";
     }
 }
