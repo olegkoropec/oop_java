@@ -3,7 +3,7 @@ package com.koropecoleg.oop;
 public class Spruce extends Plants {
 
     Spruce (int heightPlant) {
-    super(heightPlant);
+        super(heightPlant);
     }
 
     protected  void blossom(){
