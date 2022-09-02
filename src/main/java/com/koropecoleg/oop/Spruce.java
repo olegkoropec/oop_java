@@ -7,7 +7,7 @@ public class Spruce extends Plants {
     }
 
     protected  void blossom(){
-        System.out.println("I don't blossom");
+        System.out.println("I don't blossom ");
     }
 
     protected int height(int heightPlant) {
