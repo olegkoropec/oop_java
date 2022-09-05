@@ -9,6 +9,7 @@ public class Oak extends Plants {
     Oak(){
     }
 
+
     protected  void blossom(){
         System.out.println("I will blossom in spring");
     }

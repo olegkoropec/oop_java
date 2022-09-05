@@ -1,6 +1,9 @@
 package com.koropecoleg.oop;
 
 public class Spruce extends Plants {
+    Spruce(){
+
+    }
 
     Spruce (int heightPlant) {
         super(heightPlant);
