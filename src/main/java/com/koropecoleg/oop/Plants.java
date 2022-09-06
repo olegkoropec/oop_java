@@ -3,7 +3,7 @@ package com.koropecoleg.oop;
 public class Plants {
     private int widthPlant;
     private int  heightPlant;
-
+    private String name;
     private int radius_tree_trunk;
 
 
