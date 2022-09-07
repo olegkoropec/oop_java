@@ -9,6 +9,9 @@ public class Oak extends Plants {
     Oak(){
     }
 
+    Oak(int radius_tree_trunk){
+        setRadius_tree_trunk(radius_tree_trunk);
+    }
 
     protected  void blossom(){
         System.out.println("I will blossom in spring");
