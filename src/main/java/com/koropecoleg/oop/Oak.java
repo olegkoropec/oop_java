@@ -2,24 +2,11 @@ package com.koropecoleg.oop;
 
 public class Oak extends Plants {
 
-    Oak(int heightPlant, int widthPlant) {
-        super(heightPlant, widthPlant);
-    }
-
     Oak(){
     }
 
-    Oak(int radius_tree_trunk){
-        setRadius_tree_trunk(radius_tree_trunk);
+    Oak(int radius_tree_trunk, int heightPlant, int widthPlant) {
+        super(radius_tree_trunk, heightPlant, widthPlant);
     }
 
-    protected  void blossom(){
-        System.out.println("I will blossom in spring");
-    }
-
-    protected void height(double height, double width) {
-        height = getHeightPlant() + height;
-        width = getWidthPlant() + width;
-        System.out.println("Oak height is now " + height + "m and width is now " + width );
-    }
 }
