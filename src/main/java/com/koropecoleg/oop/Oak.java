@@ -5,8 +5,8 @@ public class Oak extends Plants {
     Oak(){
     }
 
-    Oak(int radius_tree_trunk, int heightPlant, int widthPlant) {
-        super(radius_tree_trunk, heightPlant, widthPlant);
+    Oak(String name, int radiusTreeTrunk, int heightPlant, int widthPlant) {
+        super(name, radiusTreeTrunk, heightPlant, widthPlant);
     }
 
 }
