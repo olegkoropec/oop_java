@@ -1,27 +1,41 @@
 package com.koropecoleg.oop;
 
+import java.util.*;
+
 public class MyOOP {
     public static void main(String[] args) {
         Plants plants = new Plants();
-        Plants oak = new Oak(50, 15);
         Plants spruce = new Spruce(34);
         Leaf leaf = new Leaf();
 
-        Oak ukrainian_oak = new Oak();
-        Oak red_oak = new Oak();
-        Oak canadian_oak = new Oak();
+        Oak ukrainianOne = new Oak("ukrainian", 6, 100, 15);
+        Oak ukrainianTwo = new Oak("ukrainian", 5, 110, 15);
+        Oak ukrainianThree = new Oak("ukrainian", 5, 100, 20);
+        Oak redOne = new Oak("red", 4, 90, 13);
+        Oak redTwo = new Oak("red", 4, 90, 13);
+        Oak canadian_oak = new Oak("canadian", 3, 80, 10);
 
-        Spruce carpatian_spruce = new Spruce();
-        Spruce european_spruce = new Spruce();
+        List<Oak> oaks = Arrays.asList(ukrainianOne, ukrainianTwo, ukrainianThree, redOne, redTwo, canadian_oak);
+        Map<String, Integer> mapOaks = new HashMap<>();
+        for (int i = 0; i < oaks.size(); i++) {
+            Oak currentTree = oaks.get(i);
+            if (mapOaks.containsKey(currentTree.getName())) {
+                int volume = mapOaks.get(currentTree.getName());
+                int result = volume + (currentTree.getRadiusTreeTrunk() * currentTree.getHeightPlant());
+                mapOaks.put(currentTree.getName(), result);
+            } else {
+                int value = currentTree.getRadiusTreeTrunk() * currentTree.getHeightPlant();
+                mapOaks.put(currentTree.getName(), value);
+            }
+        }
 
-        Plants [] plant = {ukrainian_oak, red_oak, canadian_oak, carpatian_spruce, european_spruce};
+        System.out.println(mapOaks);
 
-        plants.blossom();
-        oak.blossom();
-        oak.height(0.3, 0.15);
-        spruce.blossom();
-        spruce.height(1);
-        leaf.blossom();
-        leaf.height("I");
+//        plants.blossom();
+//        spruce.blossom();
+//        spruce.height(1);
+//        leaf.blossom();
+//        leaf.height("I");
+
     }
 }

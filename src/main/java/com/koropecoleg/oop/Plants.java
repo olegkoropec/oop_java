@@ -2,10 +2,9 @@ package com.koropecoleg.oop;
 
 public class Plants {
     private int widthPlant;
-    private int  heightPlant;
+    private int heightPlant;
+    private int radiusTreeTrunk;
     private String name;
-    private int radius_tree_trunk;
-
 
     Plants(){
     }
@@ -14,17 +13,19 @@ public class Plants {
         setHeightPlant(heightPlant);
     }
 
-    Plants(int heightPlant, int widthPlant){
+    Plants(String name, int radiusTreeTrunk, int heightPlant, int widthPlant){
+        setName(name);
+        setRadiusTreeTrunk(radiusTreeTrunk);
         setWidthPlant(widthPlant);
         setHeightPlant(heightPlant);
     }
 
-    public int getRadius_tree_trunk() {
-        return radius_tree_trunk;
+    public int getRadiusTreeTrunk() {
+        return radiusTreeTrunk;
     }
 
-    public void setRadius_tree_trunk(int radius_tree_trunk) {
-        this.radius_tree_trunk = radius_tree_trunk;
+    public void setRadiusTreeTrunk(int radiusTreeTrunk) {
+        this.radiusTreeTrunk = radiusTreeTrunk;
     }
 
     public String getName() {
